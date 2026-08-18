@@ -41,6 +41,29 @@ The frontend was changed to use the backend's actual `status`, `sql`, `rows`, `e
 
 A separate backend review also found a duplicated `MockProvider.repair()` definition. The second definition incorrectly attempted to call a network helper that the mock provider did not have. It was removed so the mock provider now has one deterministic repair method.
 
+A third error was found during the first real Gemini request after the provider was wired up. The backend responded with HTTP 500 and the traceback identified:
+
+```
+KeyError: '"sql"'
+```
+
+at `SYSTEM_PROMPT.format(schema=schema, hints=SEMANTIC_HINTS)` in `backend/llm.py`.
+
+The initial test suite used the deterministic mock provider, so a formatting bug in the Gemini prompt was not exercised. During the first real Gemini request, the provider failed with `KeyError: '"sql"'`. Inspection showed that literal JSON braces in a Python `.format()` template had not been escaped. The prompt contained:
+
+```
+- Return JSON only: {"sql":"...", "explanation":"..."}.
+```
+
+Python's `str.format()` interpreted the `{` as the start of a placeholder and tried to resolve `"sql"` as a keyword argument. The fix was to escape the literal braces by doubling them:
+
+```
+- Return JSON only: {{"sql":"...", "explanation":"..."}}.
+```
+
+The `{schema}` and `{hints}` placeholders were left as single braces — they are the intended substitution points. The corrected prompt was then tested independently with a direct `.format()` call before restarting the server.
+
+
 ## What was written/implemented with AI assistance
 
 The frontend structure, React components, initial styling, and chart implementation were substantially AI-assisted.
