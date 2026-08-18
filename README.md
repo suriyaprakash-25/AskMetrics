@@ -98,23 +98,21 @@ The frontend defaults to `http://localhost:8000` for the API. To change it, copy
 
 The backend defaults to a deterministic mock provider for reproducible local tests.
 
-### Gemini
+### Ollama (Local Qwen3 8B)
 
-Set the provider and API key in your local environment, never in Git:
+```bash
+export ASKMETRICS_LLM_PROVIDER=ollama
+export OLLAMA_HOST=http://localhost:11434
+export OLLAMA_MODEL=qwen3:8b
+uvicorn backend.main:app --reload
+```
+
+### Gemini (Optional)
 
 ```bash
 export ASKMETRICS_LLM_PROVIDER=gemini
 export GEMINI_API_KEY="..."
 export GEMINI_MODEL="gemini-2.5-flash"
-uvicorn backend.main:app --reload
-```
-
-### Ollama
-
-```bash
-export ASKMETRICS_LLM_PROVIDER=ollama
-export OLLAMA_MODEL=gemma3:4b
-export OLLAMA_URL=http://localhost:11434/api/chat
 uvicorn backend.main:app --reload
 ```
 
