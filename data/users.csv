@@ -1,0 +1,435 @@
+user_id,full_name,email,signup_date,country,tier,is_active,wallet_balance
+U0001,Layla Smith,layla.smith359@zmail.in,"October 25, 2025",India,silver,1,0
+U0002,Anna Desai,anna.desai202@mail.com,20-08-2025,USA,bronze,0,0
+U0003,Meera Sharma,meera.sharma285@fastmail.co,09-02-2025,India,silver,0,0
+U0004,James Johnson,james.johnson222@zmail.in,22-10-2025,UAE,silver,1,0
+U0005,Ananya Verma,ananya.verma91@inbox.io,26-05-2026,UK,bronze,1,200.21
+U0006,Fatima Johnson,fatima.johnson41@fastmail.co,30-04-2026,India,bronze,1,100.5
+U0007,Mei Sharma,mei.sharma748@postbox.net,15-12-2025,USA,BRONZE,1,500.82
+U0008,Divya Gupta,divya.gupta65@fastmail.co,23-09-2025,India,silver,1,0
+U0009,Aditya Johnson,aditya.johnson891@postbox.net,13-10-2025,India,bronze,1,0
+U0010,Kavya Brown,kavya.brown261@inbox.io,"January 25, 2026",UAE,,0,250.73
+U0011,Priya Smith,priya.smith299@inbox.io,16-12-2025,India,Bronze,1,0
+U0012,Ahmed Taylor,ahmed.taylor408@postbox.net,23-05-2025,India,Silver,1,50.83
+U0013,Sarah Al-Farsi,sarah.alfarsi57@fastmail.co,"April 19, 2026",UK,silver,1,200.68
+U0014,Rohan Iyer,rohan.iyer174@zmail.in,30-03-2026,USA,gold,1,500.83
+U0015,Aditya Desai,aditya.desai376@postbox.net,25-08-2025,India,bronze,0,0
+U0016,Arjun Wilson,arjun.wilson633@mail.com,29-09-2025,Singapore,bronze,0,0
+U0017,Rahul Chen,rahul.chen16@inbox.io,28-05-2026,India,bronze,1,0
+U0018,Neha Singh,neha.singh855@postbox.net,"March 31, 2026",UK,Bronze,1,0
+U0019,Ishita Joshi,ishita.joshi560@zmail.in,21-08-2025,UK,gold,1,0
+U0020,Sneha Nair,sneha.nair143@postbox.net,24-02-2026,India,bronze,1,0
+U0021,Wei Wilson,wei.wilson749@postbox.net,2025-06-07T22:00:00Z,Singapore,Silver,1,0
+U0022,Vikram Rao,vikram.rao846@zmail.in,13-03-2025,Singapore,silver,1,0
+U0023,Meera Taylor,meera.taylor129@zmail.in,09-07-2025,India,gold,1,0
+U0024,Divya Menon,divya.menon668@zmail.in,31-08-2025,Singapore,bronze,1,300.08
+U0025,Priya Iyer,priya.iyer76@zmail.in,05-06-2025,India,silver,1,100.01
+U0026,Rohan Tanaka,rohan.tanaka331@fastmail.co,"January 16, 2026",UAE,silver,0,0
+U0027,Vikram Patel,vikram.patel360@postbox.net,18-05-2026,Singapore,Silver,1,200.46
+U0028,Rohan Desai,rohan.desai316@fastmail.co,2025-11-26T10:00:00Z,UK,gold,1,0
+U0029,Sofia Brown,sofia.brown427@inbox.io,2025-11-13T21:00:00Z,USA,silver,0,250.65
+U0030,Layla Tanaka,layla.tanaka608@mail.com,"January 18, 2026",India,BRONZE,1,0
+U0031,Kavya Menon,kavya.menon411@fastmail.co,10-03-2025,UK,silver,1,0
+U0032,Vikram Brown,vikram.brown408@mail.com,14-02-2026,Singapore,BRONZE,1,0
+U0033,Hiroshi Singh,hiroshi.singh870@inbox.io,17-12-2025,UK,SILVER,0,0
+U0034,Meera Chandra,meera.chandra370@zmail.in,28-01-2025,USA,bronze,0,50.27
+U0035,Aarav Desai,aarav.desai745@zmail.in,17-02-2025,USA,gold,1,0
+U0036,Layla Smith,layla.smith679@inbox.io,2025-01-27T15:00:00Z,USA,Bronze,0,0
+U0037,Sofia Garcia,sofia.garcia829@zmail.in,09-06-2026,Singapore,BRONZE,1,0
+U0038,David Al-Farsi,david.alfarsi547@zmail.in,10-12-2025,India,bronze,1,0
+U0039,David Al-Farsi,david.alfarsi166@inbox.io,12-08-2025,UAE,silver,1,500.08
+U0040,Kavya Brown,kavya.brown444@postbox.net,13-02-2026,UAE,Gold,1,0
+U0041,Michael Wilson,michael.wilson731@inbox.io,08-02-2025,India,Bronze,1,0
+U0042,Sofia Al-Farsi,sofia.alfarsi373@zmail.in,05-09-2025,India,silver,1,0
+U0043,Rachel Sharma,rachel.sharma581@mail.com,18-12-2025,Australia,bronze,1,100.52
+U0044,Aditya Reddy,aditya.reddy466@inbox.io,24-04-2026,India,silver,1,0
+U0045,Arjun Kulkarni,arjun.kulkarni776@fastmail.co,07-06-2026,UAE,Bronze,1,0
+U0046,Karthik Chandra,karthik.chandra896@inbox.io,04-06-2025,Singapore,gold,1,0
+U0047,Ishita Sharma,ishita.sharma825@mail.com,09-08-2025,India,Bronze,1,0
+U0048,Divya Taylor,divya.taylor694@fastmail.co,12-06-2026,India,SILVER,0,150.47
+U0049,Priya Menon,priya.menon732@postbox.net,30-11-2025,India,bronze,1,0
+U0050,Arjun Brown,arjun.brown17@fastmail.co,26-04-2025,USA,silver,1,0
+U0051,Carlos Gupta,carlos.gupta498@postbox.net,2026-01-22T17:00:00Z,India,bronze,1,0
+U0052,Vikram Reddy,vikram.reddy428@mail.com,30-04-2025,USA,bronze,1,100.1
+U0053,Divya Menon,divya.menon301@mail.com,10-06-2025,USA,silver,1,0
+U0054,Layla Brown,layla.brown29@inbox.io,29-12-2025,India,SILVER,0,750.78
+U0055,Arjun Chandra,arjun.chandra120@postbox.net,17-01-2026,India,bronze,1,0
+U0056,Meera Chandra,meera.chandra600@zmail.in,18-12-2025,USA,gold,1,200.48
+U0057,Meera Taylor,meera.taylor38@postbox.net,"April 29, 2026",India,bronze,1,100.49
+U0058,Meera Nair,meera.nair173@inbox.io,11-05-2025,India,gold,1,0
+U0059,Anna Patel,anna.patel732@mail.com,04-02-2025,Singapore,silver,1,0
+U0060,Sneha Brown,sneha.brown31@postbox.net,20-12-2025,India,bronze,1,0
+U0061,Carlos Brown,carlos.brown829@inbox.io,07-06-2025,USA,gold,1,0
+U0062,Ishita Rao,ishita.rao484@mail.com,"June 13, 2025",UK,silver,0,0
+U0063,Yuki Kulkarni,yuki.kulkarni408@postbox.net,24-12-2025,USA,gold,1,0
+U0064,Omar Tanaka,omar.tanaka513@zmail.in,2025-06-01T04:00:00Z,UK,bronze,1,0
+U0065,Emily Rao,emily.rao516@inbox.io,13-05-2025,Singapore,silver,1,100.13
+U0066,Rohan Singh,rohan.singh673@inbox.io,13-02-2026,UAE,silver,1,300.44
+U0067,Neha Rossi,neha.rossi320@inbox.io,31-10-2025,UK,gold,1,500.13
+U0068,Priya Nair,priya.nair844@inbox.io,05-06-2026,India,silver,1,0
+U0069,Manish Chen,manish.chen413@fastmail.co,2025-08-25T14:00:00Z,India,silver,0,0
+U0070,Rahul Wilson,rahul.wilson761@postbox.net,12-03-2025,Singapore,Silver,1,0
+U0071,Neha Taylor,neha.taylor514@zmail.in,29-01-2026,Singapore,silver,1,500.23
+U0072,Sofia Joshi,sofia.joshi218@zmail.in,2025-11-08T11:00:00Z,USA,bronze,1,0
+U0073,Aarav Singh,aarav.singh892@mail.com,28-05-2025,Singapore,bronze,1,0
+U0074,Carlos Garcia,carlos.garcia126@mail.com,14-10-2025,India,,0,50.94
+U0075,Vikram Desai,vikram.desai723@postbox.net,23-07-2025,Australia,BRONZE,1,0
+U0076,Kavya Singh,kavya.singh581@postbox.net,03-06-2025,Singapore,silver,1,0
+U0077,Rohan Desai,rohan.desai860@mail.com,"October 01, 2025",USA,SILVER,1,100.3
+U0078,Hiroshi Brown,hiroshi.brown379@fastmail.co,16-08-2025,USA,bronze,0,300.05
+U0079,Anna Desai,anna.desai785@mail.com,31-08-2025,India,silver,1,750.08
+U0080,Ananya Garcia,ananya.garcia840@inbox.io,"December 17, 2025",India,bronze,1,150.66
+U0081,Laura Kulkarni,laura.kulkarni553@postbox.net,03-07-2025,Singapore,silver,1,0
+U0082,Aarav Desai,aarav.desai831@zmail.in,01-03-2026,India,bronze,1,0
+U0083,Emily Rossi,emily.rossi596@zmail.in,05-04-2025,India,silver,0,0
+U0084,Kavya Desai,kavya.desai861@zmail.in,29-03-2025,India,silver,1,0
+U0085,Sofia Joshi,sofia.joshi275@mail.com,11-01-2025,Australia,bronze,0,200.35
+U0086,Rohan Iyer,rohan.iyer263@inbox.io,14-06-2026,Singapore,Silver,1,300.37
+U0087,Anna Taylor,anna.taylor150@postbox.net,2025-03-18T23:00:00Z,India,Silver,0,0
+U0088,Chris Wilson,chris.wilson325@zmail.in,06-01-2026,India,bronze,1,0
+U0089,Emily Chen,emily.chen832@postbox.net,26-11-2025,UK,bronze,1,500.66
+U0090,Mei Sharma,mei.sharma230@fastmail.co,29-06-2025,USA,bronze,0,500.91
+U0091,Shruti Menon,shruti.menon867@postbox.net,19-08-2025,Singapore,bronze,1,500.34
+U0092,Aditya Desai,aditya.desai21@inbox.io,"January 18, 2026",India,bronze,1,0
+U0093,Chris Garcia,chris.garcia33@postbox.net,09-05-2025,Singapore,gold,1,0
+U0094,Carlos Patel,carlos.patel646@fastmail.co,2026-01-06T18:00:00Z,India,silver,1,0
+U0095,Ananya Tanaka,ananya.tanaka634@inbox.io,13-08-2025,India,gold,0,0
+U0096,Daniel Menon,daniel.menon812@postbox.net,2025-07-18T05:00:00Z,India,bronze,1,500.55
+U0097,Emily Bose,emily.bose195@fastmail.co,2025-10-18T09:00:00Z,India,silver,1,50.24
+U0098,David Rao,david.rao245@mail.com,04-06-2025,UAE,bronze,1,750.03
+U0099,Rachel Singh,rachel.singh259@inbox.io,03-04-2025,Australia,bronze,0,0
+U0100,Ishita Singh,ishita.singh847@fastmail.co,09-03-2025,India,bronze,1,0
+U0101,Chris Gupta,chris.gupta389@zmail.in,28-06-2025,India,silver,1,150.19
+U0102,Priya Garcia,priya.garcia313@mail.com,2025-09-16T02:00:00Z,Singapore,BRONZE,1,750.34
+U0103,James Sharma,james.sharma619@mail.com,"July 09, 2025",India,bronze,1,0
+U0104,Manish Sharma,manish.sharma345@mail.com,"January 31, 2025",India,bronze,1,0
+U0105,Karthik Al-Farsi,karthik.alfarsi229@zmail.in,28-02-2026,USA,silver,1,100.41
+U0106,Divya Rossi,divya.rossi325@fastmail.co,26-07-2025,UAE,silver,0,0
+U0107,Laura Gupta,laura.gupta887@mail.com,19-07-2025,UAE,gold,0,0
+U0108,Meera Nair,meera.nair752@inbox.io,25-10-2025,USA,silver,1,0
+U0109,Karthik Desai,karthik.desai862@postbox.net,01-09-2025,USA,bronze,1,0
+U0110,Ahmed Kulkarni,ahmed.kulkarni764@fastmail.co,"November 24, 2025",UAE,gold,1,0
+U0111,Anna Johnson,anna.johnson35@fastmail.co,12-08-2025,Singapore,bronze,1,0
+U0112,Yuki Reddy,yuki.reddy318@mail.com,04-04-2025,India,bronze,1,250.81
+U0113,Fatima Menon,fatima.menon524@fastmail.co,12-12-2025,India,bronze,1,0
+U0114,Manish Brown,manish.brown128@inbox.io,2025-01-23T13:00:00Z,India,,0,0
+U0115,Emily Brown,emily.brown895@postbox.net,14-05-2025,Singapore,bronze,1,0
+U0116,Carlos Reddy,carlos.reddy617@postbox.net,14-09-2025,India,silver,1,300.43
+U0117,Nikhil Patel,nikhil.patel416@mail.com,07-02-2026,India,silver,1,0
+U0118,Kavya Bose,kavya.bose8@zmail.in,25-05-2025,UK,bronze,1,0
+U0119,Nikhil Reddy,nikhil.reddy688@fastmail.co,"January 23, 2026",India,SILVER,1,0
+U0120,Shruti Tanaka,shruti.tanaka451@mail.com,12-03-2025,Australia,gold,1,0
+U0121,Aarav Al-Farsi,aarav.alfarsi131@mail.com,24-11-2025,India,bronze,1,0
+U0122,David Al-Farsi,david.alfarsi405@inbox.io,2026-06-18T13:00:00Z,India,silver,0,50.43
+U0123,Rachel Reddy,rachel.reddy311@inbox.io,12-03-2025,Australia,,1,500.77
+U0124,Anna Desai,anna.desai688@zmail.in,2025-02-14T00:00:00Z,Singapore,gold,0,0
+U0125,Ananya Chandra,ananya.chandra699@inbox.io,28-04-2026,India,bronze,0,0
+U0126,Omar Rao,omar.rao245@fastmail.co,28-03-2025,USA,silver,1,0
+U0127,Manish Gupta,manish.gupta424@zmail.in,28-03-2025,India,bronze,1,0
+U0128,Emily Kulkarni,emily.kulkarni451@zmail.in,"January 06, 2025",USA,silver,1,200.49
+U0129,Karthik Garcia,karthik.garcia264@inbox.io,2026-04-27T02:00:00Z,India,SILVER,1,750.45
+U0130,Sanjay Rao,sanjay.rao679@mail.com,"November 01, 2025",UAE,gold,1,0
+U0131,Pooja Gupta,pooja.gupta588@inbox.io,03-03-2025,India,bronze,1,300.06
+U0132,Daniel Garcia,daniel.garcia177@postbox.net,2025-10-29T04:00:00Z,India,gold,1,0
+U0133,Laura Rossi,laura.rossi406@mail.com,10-05-2025,Singapore,Gold,1,0
+U0134,Omar Singh,omar.singh17@inbox.io,24-11-2025,India,bronze,1,50.85
+U0135,Divya Menon,divya.menon241@postbox.net,2026-01-03T09:00:00Z,UAE,bronze,1,0
+U0136,Chris Smith,chris.smith631@zmail.in,"October 29, 2025",Singapore,bronze,1,0
+U0137,Meera Garcia,meera.garcia151@postbox.net,13-03-2026,USA,silver,1,0
+U0138,Sanjay Taylor,sanjay.taylor244@inbox.io,25-06-2025,India,gold,1,100.81
+U0139,Rahul Menon,rahul.menon887@zmail.in,10-03-2026,Australia,bronze,0,500.57
+U0140,Vikram Bose,vikram.bose107@postbox.net,26-10-2025,India,bronze,1,0
+U0141,Layla Desai,layla.desai562@mail.com,07-12-2025,India,silver,1,0
+U0142,James Wilson,james.wilson861@zmail.in,"July 06, 2025",Australia,bronze,1,250.36
+U0143,Arjun Johnson,arjun.johnson382@postbox.net,28-07-2025,Singapore,silver,1,0
+U0144,Wei Al-Farsi,wei.alfarsi894@zmail.in,2025-10-31T07:00:00Z,India,bronze,1,100.15
+U0145,Rachel Garcia,rachel.garcia178@postbox.net,25-04-2025,India,gold,1,300.64
+U0146,Arjun Brown,arjun.brown529@inbox.io,25-11-2025,USA,gold,1,500.65
+U0147,Priya Menon,priya.menon645@inbox.io,23-10-2025,India,,1,0
+U0148,Laura Menon,laura.menon200@inbox.io,"April 18, 2025",USA,bronze,1,0
+U0149,Wei Verma,wei.verma17@zmail.in,01-04-2025,USA,bronze,1,50.47
+U0150,Mei Verma,mei.verma573@inbox.io,"September 30, 2025",India,silver,1,0
+U0151,Vikram Kulkarni,vikram.kulkarni597@postbox.net,08-04-2025,India,bronze,1,0
+U0152,Shruti Smith,shruti.smith715@mail.com,21-06-2025,USA,gold,1,0
+U0153,Mei Nair,mei.nair609@inbox.io,19-05-2025,India,SILVER,1,250.16
+U0154,Anna Joshi,anna.joshi798@fastmail.co,2025-05-20T21:00:00Z,Australia,bronze,1,0
+U0155,Neha Bose,neha.bose336@fastmail.co,19-05-2026,USA,bronze,1,100.1
+U0156,Ishita Smith,ishita.smith723@postbox.net,08-08-2025,India,Silver,1,0
+U0157,Hiroshi Brown,hiroshi.brown774@fastmail.co,2025-11-02T07:00:00Z,Australia,bronze,1,0
+U0158,Shruti Rao,shruti.rao753@mail.com,13-11-2025,Australia,bronze,1,500.22
+U0159,Omar Desai,omar.desai131@fastmail.co,05-06-2026,India,GOLD,1,0
+U0160,Rahul Kulkarni,rahul.kulkarni383@postbox.net,29-01-2025,India,silver,1,0
+U0161,Kavya Bose,kavya.bose317@inbox.io,20-03-2025,India,bronze,1,0
+U0162,Ishita Smith,ishita.smith520@postbox.net,"September 23, 2025",India,silver,0,0
+U0163,Wei Joshi,wei.joshi409@zmail.in,21-11-2025,Australia,SILVER,1,0
+U0164,Arjun Wilson,arjun.wilson538@fastmail.co,23-08-2025,UK,bronze,0,0
+U0165,Sofia Bose,sofia.bose569@postbox.net,2025-09-14T09:00:00Z,India,gold,1,0
+U0166,Vikram Al-Farsi,vikram.alfarsi490@mail.com,2025-01-19T12:00:00Z,Australia,BRONZE,0,750.36
+U0167,Ishita Wilson,ishita.wilson872@zmail.in,03-12-2025,UAE,bronze,1,0
+U0168,Michael Smith,michael.smith614@inbox.io,09-03-2026,India,gold,1,0
+U0169,Priya Brown,priya.brown498@inbox.io,26-01-2025,India,silver,1,0
+U0170,Priya Patel,priya.patel561@fastmail.co,19-09-2025,USA,gold,1,150.94
+U0171,Meera Iyer,meera.iyer476@zmail.in,20-11-2025,UAE,silver,1,500.32
+U0172,Mei Patel,mei.patel777@zmail.in,30-01-2025,UK,Bronze,1,0
+U0173,Nikhil Reddy,nikhil.reddy404@zmail.in,01-06-2026,India,bronze,1,200.75
+U0174,Ahmed Al-Farsi,ahmed.alfarsi55@postbox.net,27-09-2025,USA,Silver,1,0
+U0175,Ahmed Johnson,ahmed.johnson24@fastmail.co,28-02-2025,Australia,bronze,1,300.5
+U0176,Emily Chandra,emily.chandra113@fastmail.co,22-08-2025,Singapore,gold,0,0
+U0177,Yuki Iyer,yuki.iyer516@postbox.net,"March 03, 2026",Australia,silver,0,0
+U0178,Arjun Rao,arjun.rao289@fastmail.co,05-10-2025,India,,1,100.34
+U0179,Sanjay Brown,sanjay.brown224@postbox.net,09-03-2025,India,silver,1,150.06
+U0180,Arjun Verma,arjun.verma625@inbox.io,2025-03-21T12:00:00Z,Australia,bronze,1,0
+U0181,Kavya Desai,kavya.desai295@fastmail.co,13-09-2025,India,gold,1,100.79
+U0182,Aarav Nair,aarav.nair97@fastmail.co,31-05-2026,Australia,silver,0,300.38
+U0183,Sanjay Chen,sanjay.chen896@inbox.io,23-07-2025,India,gold,1,0
+U0184,Michael Al-Farsi,michael.alfarsi55@zmail.in,2025-03-04T14:00:00Z,Singapore,gold,1,200.6
+U0185,Manish Iyer,manish.iyer237@inbox.io,29-12-2025,India,bronze,1,0
+U0186,Mei Joshi,mei.joshi853@zmail.in,22-05-2026,USA,gold,1,0
+U0187,Ishita Patel,ishita.patel648@fastmail.co,"August 29, 2025",UK,silver,1,0
+U0188,Shruti Iyer,shruti.iyer615@zmail.in,2026-04-20T14:00:00Z,India,gold,0,0
+U0189,Emily Nair,emily.nair76@inbox.io,31-05-2026,Singapore,silver,1,0
+U0190,Ahmed Garcia,ahmed.garcia179@fastmail.co,28-05-2026,India,bronze,1,0
+U0191,Yuki Sharma,yuki.sharma526@inbox.io,25-02-2025,India,Silver,1,300.49
+U0192,Manish Reddy,manish.reddy379@zmail.in,2025-12-04T09:00:00Z,India,Bronze,1,0
+U0193,Emily Desai,emily.desai734@inbox.io,16-02-2025,India,silver,0,750.07
+U0194,Omar Gupta,omar.gupta277@fastmail.co,2026-05-19T04:00:00Z,USA,silver,1,500.45
+U0195,Pooja Al-Farsi,pooja.alfarsi210@postbox.net,19-04-2025,USA,silver,0,200.73
+U0196,Wei Rao,wei.rao118@postbox.net,16-09-2025,India,Silver,1,50.67
+U0197,James Taylor,james.taylor417@mail.com,24-08-2025,USA,SILVER,1,0
+U0198,Nikhil Menon,nikhil.menon879@fastmail.co,18-10-2025,India,SILVER,1,0
+U0199,David Brown,david.brown223@postbox.net,15-08-2025,USA,Bronze,1,0
+U0200,Omar Desai,omar.desai817@zmail.in,05-12-2025,USA,gold,0,0
+U0201,Priya Tanaka,priya.tanaka713@fastmail.co,04-01-2026,Australia,silver,1,0
+U0202,Mei Sharma,mei.sharma319@zmail.in,15-02-2026,USA,BRONZE,1,250.37
+U0203,Michael Rossi,michael.rossi417@inbox.io,25-05-2026,Singapore,gold,1,100.91
+U0204,Vikram Reddy,vikram.reddy377@mail.com,25-06-2025,USA,bronze,0,100.38
+U0205,Neha Smith,neha.smith102@zmail.in,11-06-2025,UAE,gold,0,150.95
+U0206,Vikram Tanaka,vikram.tanaka317@fastmail.co,13-03-2025,India,,1,300.36
+U0207,Kavya Singh,kavya.singh194@zmail.in,"March 09, 2026",Singapore,bronze,1,0
+U0208,Kavya Verma,kavya.verma619@postbox.net,11-03-2026,USA,GOLD,1,300.68
+U0209,Layla Gupta,layla.gupta612@postbox.net,01-05-2025,UK,bronze,1,0
+U0210,David Tanaka,david.tanaka719@fastmail.co,14-07-2025,Australia,silver,1,0
+U0211,Karthik Johnson,karthik.johnson268@mail.com,08-04-2026,India,bronze,1,200.46
+U0212,Sarah Gupta,sarah.gupta45@fastmail.co,2026-03-02T17:00:00Z,India,,1,0
+U0213,Michael Wilson,michael.wilson298@inbox.io,14-03-2025,UAE,silver,1,0
+U0214,Hiroshi Johnson,hiroshi.johnson151@inbox.io,2026-01-22T19:00:00Z,India,silver,1,0
+U0215,Anna Smith,anna.smith860@mail.com,19-02-2025,India,silver,1,0
+U0216,Fatima Garcia,fatima.garcia797@zmail.in,15-02-2025,USA,bronze,1,250.98
+U0217,Sneha Smith,sneha.smith74@inbox.io,21-12-2025,USA,silver,1,750.76
+U0218,Ananya Rossi,ananya.rossi415@mail.com,24-03-2025,UK,bronze,1,300.25
+U0219,Anna Joshi,anna.joshi130@mail.com,"August 08, 2025",Australia,silver,1,0
+U0220,Ahmed Chen,ahmed.chen452@postbox.net,06-05-2025,India,silver,1,300.41
+U0221,Emily Garcia,emily.garcia222@postbox.net,"April 30, 2025",USA,gold,1,0
+U0222,Carlos Chandra,carlos.chandra373@mail.com,27-03-2026,USA,gold,1,0
+U0223,Yuki Sharma,yuki.sharma637@postbox.net,"March 27, 2026",Singapore,SILVER,1,250.22
+U0224,Sarah Rao,sarah.rao201@postbox.net,"August 12, 2025",India,gold,1,0
+U0225,James Rao,james.rao381@postbox.net,08-03-2026,India,,1,150.51
+U0226,Chris Nair,chris.nair96@zmail.in,31-01-2025,UK,bronze,1,300.78
+U0227,Sanjay Smith,sanjay.smith289@inbox.io,"July 27, 2025",India,silver,1,200.16
+U0228,Omar Nair,omar.nair564@postbox.net,30-09-2025,India,silver,0,300.15
+U0229,Meera Desai,meera.desai30@fastmail.co,20-10-2025,Australia,gold,1,0
+U0230,Kavya Rao,kavya.rao895@mail.com,07-11-2025,USA,BRONZE,1,0
+U0231,Rohan Johnson,rohan.johnson103@postbox.net,14-09-2025,India,bronze,1,0
+U0232,Kavya Chandra,kavya.chandra494@mail.com,26-05-2025,USA,,1,0
+U0233,Rachel Gupta,rachel.gupta140@zmail.in,17-05-2025,USA,silver,1,0
+U0234,Karthik Chandra,karthik.chandra91@fastmail.co,01-04-2026,India,bronze,1,0
+U0235,Kavya Chandra,kavya.chandra333@postbox.net,14-11-2025,UAE,bronze,1,300.83
+U0236,Emily Wilson,emily.wilson815@inbox.io,13-09-2025,India,silver,1,0
+U0237,Aditya Chen,aditya.chen369@postbox.net,05-12-2025,Australia,,0,0
+U0238,Chris Johnson,chris.johnson553@postbox.net,24-01-2026,USA,silver,1,0
+U0239,Hiroshi Bose,hiroshi.bose552@postbox.net,17-08-2025,Australia,,1,0
+U0240,Omar Wilson,omar.wilson653@zmail.in,"October 13, 2025",Singapore,bronze,1,200.92
+U0241,Meera Chandra,meera.chandra343@mail.com,25-04-2025,India,Silver,1,0
+U0242,Arjun Menon,arjun.menon112@zmail.in,06-11-2025,UK,Bronze,1,0
+U0243,Kavya Bose,kavya.bose38@inbox.io,27-05-2026,Singapore,silver,1,150.14
+U0244,Anna Rossi,anna.rossi155@mail.com,18-02-2025,Singapore,silver,1,0
+U0245,Sarah Gupta,sarah.gupta188@fastmail.co,26-09-2025,India,bronze,1,300.93
+U0246,David Rossi,david.rossi107@mail.com,26-06-2025,India,silver,1,0
+U0247,Karthik Verma,karthik.verma218@postbox.net,"January 21, 2026",UAE,silver,1,0
+U0248,Shruti Al-Farsi,shruti.alfarsi828@postbox.net,13-11-2025,USA,gold,1,0
+U0249,Sneha Taylor,sneha.taylor14@fastmail.co,18-02-2025,USA,silver,1,0
+U0250,Hiroshi Joshi,hiroshi.joshi292@mail.com,15-07-2025,India,bronze,0,0
+U0251,Fatima Smith,fatima.smith128@zmail.in,2025-10-20T14:00:00Z,Australia,,1,0
+U0252,Shruti Bose,shruti.bose228@mail.com,13-12-2025,India,SILVER,0,0
+U0253,Divya Desai,divya.desai146@zmail.in,2025-07-01T22:00:00Z,India,gold,1,0
+U0254,Hiroshi Bose,hiroshi.bose514@fastmail.co,11-06-2026,India,gold,1,0
+U0255,Kavya Verma,kavya.verma389@zmail.in,05-02-2025,USA,bronze,0,0
+U0256,Sofia Rossi,sofia.rossi689@fastmail.co,09-05-2025,India,bronze,0,0
+U0257,Chris Kulkarni,chris.kulkarni123@inbox.io,01-10-2025,UK,gold,0,0
+U0258,Ahmed Desai,ahmed.desai123@mail.com,18-03-2026,India,bronze,0,100.49
+U0259,Ahmed Johnson,ahmed.johnson410@inbox.io,16-02-2026,UK,bronze,0,750.26
+U0260,Daniel Chen,daniel.chen708@zmail.in,"August 19, 2025",Australia,bronze,1,150.31
+U0261,James Chandra,james.chandra863@inbox.io,15-08-2025,India,bronze,1,0
+U0262,Fatima Singh,fatima.singh469@inbox.io,15-12-2025,India,gold,0,100.05
+U0263,Hiroshi Kulkarni,hiroshi.kulkarni433@postbox.net,30-01-2025,India,silver,0,300.14
+U0264,Rachel Gupta,rachel.gupta517@inbox.io,25-03-2026,USA,gold,1,0
+U0265,David Gupta,david.gupta576@fastmail.co,14-02-2025,UAE,bronze,1,200.48
+U0266,Aditya Reddy,aditya.reddy454@zmail.in,07-04-2026,Singapore,Silver,1,150.61
+U0267,Vikram Bose,vikram.bose17@fastmail.co,23-05-2026,India,bronze,1,0
+U0268,Rachel Taylor,rachel.taylor501@zmail.in,22-02-2025,USA,bronze,1,0
+U0269,Laura Brown,laura.brown400@inbox.io,19-12-2025,India,silver,1,0
+U0270,Omar Rossi,omar.rossi225@zmail.in,14-06-2025,India,silver,1,0
+U0271,Mei Smith,mei.smith722@fastmail.co,25-03-2025,India,bronze,1,250.82
+U0272,Chris Smith,chris.smith527@inbox.io,"February 07, 2025",UK,silver,1,0
+U0273,Emily Joshi,emily.joshi655@mail.com,03-06-2025,UAE,silver,1,0
+U0274,Rachel Rao,rachel.rao887@inbox.io,27-04-2026,India,bronze,1,0
+U0275,Vikram Taylor,vikram.taylor407@mail.com,02-01-2026,India,bronze,1,0
+U0276,Omar Garcia,omar.garcia200@postbox.net,14-06-2026,UAE,bronze,1,0
+U0277,Shruti Patel,shruti.patel127@mail.com,24-01-2025,India,bronze,1,0
+U0278,Aarav Tanaka,aarav.tanaka320@zmail.in,16-03-2026,India,bronze,1,0
+U0279,Rohan Verma,rohan.verma353@postbox.net,"January 29, 2026",UAE,bronze,1,250.35
+U0280,Hiroshi Nair,hiroshi.nair565@inbox.io,24-07-2025,Australia,bronze,0,0
+U0281,Vikram Brown,vikram.brown585@postbox.net,23-03-2025,Singapore,bronze,0,500.4
+U0282,Rohan Gupta,rohan.gupta3@fastmail.co,11-09-2025,India,silver,1,250.74
+U0283,Neha Chandra,neha.chandra677@postbox.net,11-09-2025,Australia,Bronze,1,750.92
+U0284,Wei Rao,wei.rao829@fastmail.co,"May 15, 2025",USA,silver,0,0
+U0285,Ananya Iyer,ananya.iyer568@zmail.in,"August 25, 2025",USA,bronze,1,150.05
+U0286,Rahul Nair,rahul.nair181@zmail.in,21-01-2025,India,silver,1,750.71
+U0287,Pooja Menon,pooja.menon329@postbox.net,"May 02, 2025",India,gold,1,0
+U0288,Neha Joshi,neha.joshi318@mail.com,28-05-2026,USA,gold,1,750.26
+U0289,Rachel Joshi,rachel.joshi695@fastmail.co,2025-06-05T14:00:00Z,India,,1,50.45
+U0290,Rachel Reddy,rachel.reddy391@fastmail.co,01-02-2025,UK,bronze,1,100.7
+U0291,Rohan Tanaka,rohan.tanaka667@zmail.in,01-02-2026,India,gold,1,0
+U0292,Wei Garcia,wei.garcia846@mail.com,27-04-2026,UK,bronze,0,150.81
+U0293,Rohan Taylor,rohan.taylor547@postbox.net,15-02-2026,USA,bronze,1,250.11
+U0294,Priya Nair,priya.nair550@mail.com,16-11-2025,UAE,SILVER,1,0
+U0295,Vikram Menon,vikram.menon639@mail.com,09-02-2025,India,gold,0,200.73
+U0296,Sanjay Iyer,sanjay.iyer824@fastmail.co,23-11-2025,USA,bronze,0,0
+U0297,Manish Rao,manish.rao868@fastmail.co,23-02-2025,India,bronze,1,0
+U0298,James Smith,james.smith857@postbox.net,"June 05, 2026",UAE,silver,1,750.62
+U0299,James Al-Farsi,james.alfarsi407@mail.com,20-01-2026,India,Gold,1,150.18
+U0300,Mei Sharma,mei.sharma607@postbox.net,07-03-2025,USA,bronze,1,100.46
+U0301,Fatima Verma,fatima.verma535@inbox.io,23-05-2025,India,silver,1,0
+U0302,Mei Reddy,mei.reddy348@inbox.io,24-05-2026,Singapore,bronze,1,0
+U0303,Layla Sharma,layla.sharma617@fastmail.co,13-05-2026,India,silver,1,0
+U0304,Pooja Smith,pooja.smith674@inbox.io,26-03-2026,India,bronze,1,500.54
+U0305,Arjun Patel,arjun.patel16@mail.com,31-05-2026,India,silver,0,0
+U0306,Sofia Menon,sofia.menon223@fastmail.co,20-04-2026,Singapore,bronze,0,100.09
+U0307,Mei Singh,mei.singh467@mail.com,2026-01-21T07:00:00Z,India,bronze,1,0
+U0308,Manish Singh,manish.singh148@postbox.net,17-08-2025,UK,silver,1,0
+U0309,Wei Singh,wei.singh795@mail.com,01-10-2025,UAE,gold,1,250.43
+U0310,Aditya Menon,aditya.menon723@fastmail.co,28-05-2025,UAE,bronze,0,300.84
+U0311,Ahmed Verma,ahmed.verma201@fastmail.co,"May 21, 2026",USA,bronze,1,0
+U0312,Kavya Brown,kavya.brown669@mail.com,30-10-2025,USA,GOLD,1,0
+U0313,Emily Desai,emily.desai370@fastmail.co,19-04-2026,India,gold,1,0
+U0314,James Garcia,james.garcia766@inbox.io,21-01-2026,India,,0,0
+U0315,Anna Garcia,anna.garcia782@postbox.net,28-03-2026,Singapore,SILVER,1,0
+U0316,Pooja Joshi,pooja.joshi691@postbox.net,2025-05-13T13:00:00Z,USA,bronze,1,0
+U0317,Ahmed Sharma,ahmed.sharma562@inbox.io,08-06-2025,India,bronze,1,0
+U0318,Kavya Desai,kavya.desai874@zmail.in,13-05-2026,India,bronze,1,0
+U0319,Ananya Taylor,ananya.taylor842@mail.com,25-06-2025,India,Gold,1,0
+U0320,Divya Chandra,divya.chandra283@fastmail.co,"May 01, 2025",India,Gold,1,100.6
+U0321,Rahul Verma,rahul.verma81@zmail.in,28-11-2025,India,bronze,1,0
+U0322,Ananya Wilson,ananya.wilson693@mail.com,2026-06-07T14:00:00Z,India,bronze,0,250.27
+U0323,Sofia Nair,sofia.nair111@zmail.in,28-05-2025,Australia,bronze,1,0
+U0324,Carlos Desai,carlos.desai212@inbox.io,30-12-2025,UAE,bronze,1,0
+U0325,Rahul Wilson,rahul.wilson487@fastmail.co,20-12-2025,UK,gold,1,0
+U0326,Aarav Bose,aarav.bose286@fastmail.co,10-06-2026,India,silver,0,0
+U0327,Carlos Kulkarni,carlos.kulkarni54@mail.com,25-01-2026,India,silver,1,0
+U0328,Neha Chen,neha.chen745@zmail.in,24-06-2026,Singapore,gold,0,0
+U0329,Ahmed Taylor,ahmed.taylor864@inbox.io,10-10-2025,India,bronze,1,0
+U0330,Arjun Sharma,arjun.sharma600@inbox.io,20-04-2025,India,BRONZE,1,150.81
+U0331,Daniel Joshi,daniel.joshi873@postbox.net,31-07-2025,Singapore,SILVER,1,0
+U0332,Shruti Tanaka,shruti.tanaka534@zmail.in,15-09-2025,Singapore,silver,0,500.28
+U0333,Nikhil Reddy,nikhil.reddy23@postbox.net,03-08-2025,India,bronze,1,100.16
+U0334,Vikram Menon,vikram.menon174@zmail.in,27-03-2025,USA,bronze,1,0
+U0335,Daniel Garcia,daniel.garcia720@inbox.io,20-06-2026,UK,bronze,1,0
+U0336,Karthik Brown,karthik.brown213@postbox.net,"December 22, 2025",India,Bronze,1,0
+U0337,Shruti Taylor,shruti.taylor282@mail.com,19-03-2025,India,bronze,1,0
+U0338,Anna Desai,anna.desai623@inbox.io,10-10-2025,India,Silver,1,300.04
+U0339,Karthik Rossi,karthik.rossi600@fastmail.co,"May 18, 2026",USA,silver,0,100.8
+U0340,Shruti Wilson,shruti.wilson676@inbox.io,07-04-2025,India,bronze,1,0
+U0341,Sneha Menon,sneha.menon124@fastmail.co,2025-03-24T03:00:00Z,India,Bronze,1,50.23
+U0342,Rachel Brown,rachel.brown163@mail.com,05-11-2025,India,bronze,1,0
+U0343,Karthik Chen,karthik.chen497@fastmail.co,2025-10-11T10:00:00Z,Australia,bronze,0,200.8
+U0344,Wei Brown,wei.brown462@postbox.net,15-05-2025,Australia,bronze,0,300.95
+U0345,Yuki Bose,yuki.bose581@mail.com,15-03-2026,USA,GOLD,1,0
+U0346,Emily Brown,emily.brown490@zmail.in,01-03-2026,UAE,BRONZE,1,0
+U0347,Ishita Johnson,ishita.johnson148@zmail.in,08-04-2026,UK,bronze,0,250.32
+U0348,Layla Joshi,layla.joshi127@inbox.io,11-06-2026,India,bronze,0,0
+U0349,Layla Bose,layla.bose791@postbox.net,08-09-2025,UAE,gold,1,0
+U0350,Neha Rao,neha.rao824@postbox.net,10-02-2025,India,,1,750.18
+U0351,Laura Nair,laura.nair491@mail.com,18-04-2026,India,silver,1,50.13
+U0352,Rahul Patel,rahul.patel555@postbox.net,"April 30, 2025",India,bronze,1,300.61
+U0353,Anna Gupta,anna.gupta26@fastmail.co,"January 18, 2025",India,silver,0,200.51
+U0354,Neha Wilson,neha.wilson508@zmail.in,03-02-2025,UAE,silver,1,0
+U0355,Ishita Singh,ishita.singh738@mail.com,01-07-2025,UK,,1,0
+U0356,Sanjay Tanaka,sanjay.tanaka732@inbox.io,07-03-2026,USA,Gold,1,0
+U0357,Michael Kulkarni,michael.kulkarni776@fastmail.co,"November 04, 2025",USA,,1,0
+U0358,Sneha Desai,sneha.desai253@mail.com,"April 24, 2026",India,bronze,1,0
+U0359,Yuki Chandra,yuki.chandra401@postbox.net,"January 07, 2026",India,silver,1,500.89
+U0360,Chris Rossi,chris.rossi719@postbox.net,27-04-2026,UK,silver,1,200.53
+U0361,Sarah Rossi,sarah.rossi639@zmail.in,16-01-2026,UAE,bronze,1,0
+U0362,Wei Rao,wei.rao772@fastmail.co,2025-06-29T21:00:00Z,Australia,gold,1,0
+U0363,Karthik Nair,karthik.nair282@mail.com,18-08-2025,Australia,gold,0,0
+U0364,Aarav Rossi,aarav.rossi777@mail.com,"January 06, 2025",UK,,1,250.35
+U0365,Daniel Reddy,daniel.reddy877@mail.com,08-05-2026,India,gold,0,500.72
+U0366,Ananya Kulkarni,ananya.kulkarni706@mail.com,13-01-2025,USA,silver,1,0
+U0367,Sarah Sharma,sarah.sharma879@fastmail.co,13-06-2025,India,bronze,1,0
+U0368,Carlos Garcia,carlos.garcia252@mail.com,2026-02-25T07:00:00Z,India,bronze,1,200.02
+U0369,Manish Reddy,manish.reddy88@mail.com,16-11-2025,India,BRONZE,1,50.27
+U0370,Yuki Gupta,yuki.gupta478@zmail.in,28-06-2025,India,silver,0,0
+U0371,Carlos Rossi,carlos.rossi716@inbox.io,05-04-2025,India,GOLD,1,0
+U0372,Priya Verma,priya.verma779@mail.com,08-11-2025,USA,bronze,1,0
+U0373,Divya Joshi,divya.joshi473@mail.com,09-09-2025,India,BRONZE,1,300.75
+U0374,Aditya Garcia,aditya.garcia634@fastmail.co,"May 03, 2026",India,Bronze,1,0
+U0375,Sofia Brown,sofia.brown545@postbox.net,2025-01-19T02:00:00Z,India,bronze,1,250.09
+U0376,Nikhil Chandra,nikhil.chandra430@mail.com,2025-03-12T06:00:00Z,India,bronze,1,0
+U0377,Emily Sharma,emily.sharma607@mail.com,"October 14, 2025",India,Bronze,1,50.91
+U0378,Sarah Iyer,sarah.iyer132@postbox.net,20-08-2025,UK,gold,1,0
+U0379,Kavya Singh,kavya.singh159@inbox.io,30-11-2025,USA,,0,0
+U0380,Omar Taylor,omar.taylor184@inbox.io,"November 20, 2025",India,gold,1,0
+U0381,Layla Verma,layla.verma867@zmail.in,19-06-2026,UK,,1,0
+U0382,Fatima Chandra,fatima.chandra663@zmail.in,2025-04-15T17:00:00Z,India,silver,0,0
+U0383,Laura Tanaka,laura.tanaka555@zmail.in,06-08-2025,India,Bronze,1,300.74
+U0384,Sarah Taylor,sarah.taylor650@postbox.net,16-12-2025,Singapore,,1,0
+U0385,Shruti Chandra,shruti.chandra211@mail.com,05-10-2025,Australia,bronze,1,250.51
+U0386,Michael Brown,michael.brown120@fastmail.co,23-01-2026,India,bronze,1,0
+U0387,Arjun Chandra,arjun.chandra745@zmail.in,2025-09-13T12:00:00Z,UAE,,1,50.4
+U0388,Emily Verma,emily.verma367@fastmail.co,22-09-2025,India,bronze,1,0
+U0389,Meera Smith,meera.smith169@inbox.io,03-08-2025,India,silver,1,0
+U0390,Daniel Wilson,daniel.wilson720@inbox.io,"March 11, 2025",USA,gold,1,750.18
+U0391,Emily Bose,emily.bose321@fastmail.co,16-05-2025,USA,bronze,1,0
+U0392,Carlos Singh,carlos.singh441@fastmail.co,27-12-2025,UAE,bronze,1,100.64
+U0393,Rachel Gupta,rachel.gupta136@zmail.in,02-06-2026,USA,Gold,1,500.68
+U0394,Chris Chandra,chris.chandra333@zmail.in,"June 26, 2026",Australia,silver,1,0
+U0395,Rohan Kulkarni,rohan.kulkarni432@mail.com,14-06-2025,India,,1,0
+U0396,Sarah Sharma,sarah.sharma32@inbox.io,12-03-2025,India,bronze,1,150.14
+U0397,Rohan Menon,rohan.menon33@fastmail.co,02-11-2025,Singapore,bronze,1,0
+U0398,Emily Smith,emily.smith497@mail.com,02-05-2026,India,bronze,1,0
+U0399,Carlos Gupta,carlos.gupta737@postbox.net,27-02-2025,USA,silver,0,250.13
+U0400,Ahmed Smith,ahmed.smith632@fastmail.co,23-01-2026,UAE,silver,1,250.58
+U0401,Sofia Rao,sofia.rao806@inbox.io,26-03-2025,India,silver,1,50.78
+U0402,Karthik Verma,karthik.verma562@mail.com,28-09-2025,USA,bronze,1,300.53
+U0403,Pooja Sharma,pooja.sharma657@zmail.in,01-04-2025,India,bronze,0,0
+U0404,Arjun Nair,arjun.nair761@inbox.io,25-01-2025,India,gold,1,0
+U0405,Ahmed Wilson,ahmed.wilson727@mail.com,24-03-2025,USA,Silver,1,50.68
+U0406,Chris Tanaka,chris.tanaka803@postbox.net,"May 19, 2026",India,silver,1,250.1
+U0407,Aarav Brown,aarav.brown738@mail.com,"May 13, 2026",USA,silver,0,0
+U0408,Ishita Patel,ishita.patel51@postbox.net,06-03-2025,India,Bronze,1,150.56
+U0409,Fatima Desai,fatima.desai125@mail.com,16-08-2025,Australia,bronze,0,0
+U0410,Nikhil Bose,nikhil.bose190@mail.com,23-02-2026,USA,gold,1,0
+U0411,David Al-Farsi,david.alfarsi353@postbox.net,18-05-2025,UAE,silver,1,50.72
+U0412,Meera Reddy,meera.reddy809@zmail.in,07-03-2026,Australia,bronze,1,300.02
+U0413,Manish Tanaka,manish.tanaka815@inbox.io,"May 02, 2026",India,bronze,1,0
+U0414,Yuki Nair,yuki.nair137@zmail.in,11-06-2025,USA,Silver,1,0
+U0415,Carlos Nair,carlos.nair861@mail.com,10-03-2025,India,silver,1,0
+U0416,Chris Menon,chris.menon111@fastmail.co,05-03-2025,Australia,gold,1,0
+U0417,Arjun Desai,arjun.desai136@fastmail.co,06-11-2025,India,gold,1,500.33
+U0418,Emily Menon,emily.menon856@fastmail.co,"March 09, 2026",USA,bronze,1,200.54
+U0419,David Gupta,david.gupta714@mail.com,22-10-2025,USA,Gold,1,0
+U0420,Aditya Patel,aditya.patel314@mail.com,04-08-2025,India,gold,1,0
+U0421,Anna Rossi,Anna.rossi155@mail.com,20-04-2025,Singapore,silver,1,0
+U0422,Chris Wilson,Chris.wilson325@zmail.in,30-03-2026,India,bronze,1,0
+U0423,Ananya Taylor,Ananya.taylor842@mail.com,2025-07-25T01:00:00Z,India,Gold,1,0
+U0424,Vikram Brown, vikram.brown585@postbox.net,27-03-2025,Singapore,bronze,0,0
+U0425,Yuki Iyer,Yuki.iyer516@postbox.net,16-04-2026,Australia,silver,0,0
+U0426,Rahul Kulkarni,rahul.kulkarni383@postbox.net ,03-02-2025,India,silver,1,0
+U0427,Laura Kulkarni,Laura.kulkarni553@postbox.net,05-08-2025,Singapore,silver,1,0
+U0428,Yuki Sharma,Yuki.sharma526@inbox.io,30-03-2025,India,Silver,1,0
+U0429,Divya Gupta,Divya.gupta65@fastmail.co,"December 15, 2025",India,silver,1,0
+U0430,Aditya Johnson,ADITYA.JOHNSON891@POSTBOX.NET,17-12-2025,India,bronze,1,0
+U0431,Aditya Desai,Aditya.desai376@postbox.net,30-09-2025,India,bronze,1,0
+U0432,Sanjay Tanaka, sanjay.tanaka732@inbox.io,08-03-2026,USA,Gold,1,0
+U0433,Shruti Taylor,shruti.taylor282@mail.com ,12-06-2025,India,bronze,0,0
+U0434,Rohan Singh,Rohan.singh673@inbox.io,03-05-2026,UAE,silver,1,0
