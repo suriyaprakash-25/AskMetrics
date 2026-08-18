@@ -56,7 +56,7 @@ function App() {
       const content = response.status === 'success'
         ? 'Here is what I found.'
         : response.status === 'refusal'
-          ? 'I can’t answer that from the available data or safety policy.'
+          ? "I can't answer that from the available data or safety policy."
           : 'The query could not be completed safely.';
 
       setMessages((previous) => previous.map((message) =>

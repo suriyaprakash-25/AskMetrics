@@ -13,6 +13,19 @@ import {
 } from 'recharts';
 import type { ResultRow } from '../api';
 
+// Deterministic palette — series are always the same color regardless of LLM output.
+const SERIES_COLORS = [
+  '#6366f1', // indigo  (accent)
+  '#10b981', // emerald
+  '#f59e0b', // amber
+  '#3b82f6', // blue
+  '#ec4899', // pink
+  '#8b5cf6', // violet
+];
+
+const seriesColor = (index: number): string =>
+  SERIES_COLORS[index % SERIES_COLORS.length];
+
 interface ChartRendererProps {
   data: ResultRow[];
 }
@@ -87,7 +100,7 @@ export const ChartRenderer: React.FC<ChartRendererProps> = ({ data }) => {
           <YAxis stroke="var(--text-secondary)" />
           <Tooltip />
           <Legend />
-          {numericKeys.map((key) => <Line key={key} type="monotone" dataKey={key} stroke="var(--accent-color)" strokeWidth={2} />)}
+          {numericKeys.map((key, i) => <Line key={key} type="monotone" dataKey={key} stroke={seriesColor(i)} strokeWidth={2} />)}
         </LineChart>
       </ResponsiveContainer>
     ) : (
@@ -98,7 +111,7 @@ export const ChartRenderer: React.FC<ChartRendererProps> = ({ data }) => {
           <YAxis stroke="var(--text-secondary)" />
           <Tooltip />
           <Legend />
-          {numericKeys.map((key) => <Bar key={key} dataKey={key} fill="var(--accent-color)" radius={[4, 4, 0, 0]} />)}
+          {numericKeys.map((key, i) => <Bar key={key} dataKey={key} fill={seriesColor(i)} radius={[4, 4, 0, 0]} />)}
         </BarChart>
       </ResponsiveContainer>
     );
@@ -134,7 +147,7 @@ export const ChartRenderer: React.FC<ChartRendererProps> = ({ data }) => {
           <YAxis stroke="var(--text-secondary)" />
           <Tooltip />
           <Legend />
-          {seriesValues.map((series) => <Line key={series} type="monotone" dataKey={series} stroke="var(--accent-color)" strokeWidth={2} />)}
+          {seriesValues.map((series, i) => <Line key={series} type="monotone" dataKey={series} stroke={seriesColor(i)} strokeWidth={2} />)}
         </LineChart>
       </ResponsiveContainer>
     ) : (
@@ -145,7 +158,7 @@ export const ChartRenderer: React.FC<ChartRendererProps> = ({ data }) => {
           <YAxis stroke="var(--text-secondary)" />
           <Tooltip />
           <Legend />
-          {seriesValues.map((series) => <Bar key={series} dataKey={series} fill="var(--accent-color)" />)}
+          {seriesValues.map((series, i) => <Bar key={series} dataKey={series} fill={seriesColor(i)} />)}
         </BarChart>
       </ResponsiveContainer>
     );
