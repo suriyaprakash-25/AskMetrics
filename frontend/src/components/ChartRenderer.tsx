@@ -112,6 +112,12 @@ export const ChartRenderer: React.FC<ChartRendererProps> = ({ data }) => {
     const isTimeBased = /date|month|year|week|quarter|time/i.test(categoryKey);
     const isMonetary = numericKeys.some(isMonetaryColumn);
 
+    // If the grouping dimension is currency and the metrics are monetary, do NOT render a combined chart
+    // with a single shared axis because INR and USD are different units. Instead, render the formatted table.
+    if (categoryKey.toLowerCase() === 'currency' && isMonetary) {
+      return renderTable(data);
+    }
+
     const tooltipFormatter = (value: unknown, name: unknown, item: any) => {
       const nameStr = String(name ?? '');
       const rowCurrency = (item?.payload?.currency ?? data[0]?.currency) as string | undefined;
