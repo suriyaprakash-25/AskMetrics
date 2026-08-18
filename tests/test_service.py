@@ -39,3 +39,26 @@ def test_mock_provider_answer():
     result = _mock_service().ask("How many active users do we have?")
     assert result["status"] == "success"
     assert result["rows"] == [{"active_users": 350}]
+
+
+def test_discount_question_semantic_accuracy():
+    result = _mock_service().ask("How much have we given away in discounts?")
+    assert result["status"] == "success"
+    assert "discount_amount_cents" in result["sql"]
+    assert "gross_amount_cents - discount_amount_cents" not in result["sql"]
+    assert len(result["rows"]) == 2
+    assert result["rows"][0]["currency"] == "INR"
+    inr_discount = result["rows"][0].get("total_discounts", result["rows"][0].get("SUM(discount_amount_cents)"))
+    assert inr_discount == 9631065
+    assert result["rows"][1]["currency"] == "USD"
+    usd_discount = result["rows"][1].get("total_discounts", result["rows"][1].get("SUM(discount_amount_cents)"))
+    assert usd_discount == 66779
+
+
+def test_revenue_question_semantic_accuracy():
+    result = _mock_service().ask("What is our total revenue?")
+    assert result["status"] == "success"
+    assert "revenue_cents" in result["sql"]
+    assert len(result["rows"]) == 2
+    assert result["rows"][0]["currency"] == "INR"
+    assert result["rows"][0]["revenue_cents"] == 163100282
