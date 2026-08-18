@@ -16,11 +16,6 @@ def connect_readonly(path: Path) -> sqlite3.Connection:
 
     def authorizer(action, arg1, arg2, dbname, source):
         # SQLite authorizer is a second, independent safety boundary.
-        allowed = {
-            sqlite3.SQLITE_SELECT,
-            sqlite3.SQLITE_READ,
-            sqlite3.SQLITE_FUNCTION,
-        }
         if action == sqlite3.SQLITE_PRAGMA:
             pragma_name = (arg1 or "").lower()
             if pragma_name in {"table_info", "foreign_key_list"}:

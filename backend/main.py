@@ -16,6 +16,14 @@ app.add_middleware(
 class AskRequest(BaseModel):
     question: str = Field(min_length=1, max_length=2000)
 
+@app.get("/")
+def root():
+    return {
+        "service": "AskMetrics API",
+        "version": "0.1.0",
+        "endpoints": ["/health", "/schema", "/ask"],
+    }
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
