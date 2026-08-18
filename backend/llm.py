@@ -132,43 +132,73 @@ If it cannot be answered, return an empty sql and a REFUSE explanation."""
         except (urllib.error.URLError, TimeoutError, KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
             raise LLMError(f"Gemini request/response failed: {exc}") from exc
 
+import re
+import ollama
+
 class OllamaProvider(BaseProvider):
     def __init__(self):
-        self.model = os.environ.get("OLLAMA_MODEL", "gemma3:4b")
-        self.url = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
+        host = os.environ.get("OLLAMA_HOST") or os.environ.get("OLLAMA_URL") or "http://localhost:11434"
+        if "/api" in host:
+            host = host.split("/api")[0]
+        self.host = host
+        self.model = os.environ.get("OLLAMA_MODEL", "qwen3:8b")
+        self.client = ollama.Client(host=self.host, timeout=180.0)
+
+    def _parse_response_json(self, raw_content: str) -> LLMResult:
+        if not raw_content:
+            raise LLMError("Ollama returned an empty response.")
+
+        # Strip reasoning/thinking tags if model emits <think>...</think>
+        cleaned = re.sub(r"<think>.*?</think>", "", raw_content, flags=re.DOTALL).strip()
+
+        try:
+            obj = json.loads(cleaned)
+        except json.JSONDecodeError:
+            match = re.search(r"\{.*\}", cleaned, flags=re.DOTALL)
+            if match:
+                try:
+                    obj = json.loads(match.group(0))
+                except json.JSONDecodeError as exc:
+                    raise LLMError(f"Could not parse JSON from Ollama response: {cleaned}") from exc
+            else:
+                raise LLMError(f"Ollama response did not contain valid JSON: {cleaned}")
+
+        if not isinstance(obj, dict):
+            raise LLMError("Ollama JSON response is not an object.")
+
+        sql = str(obj.get("sql", ""))
+        explanation = str(obj.get("explanation", ""))
+        return LLMResult(sql=sql, explanation=explanation)
 
     def generate(self, question: str, schema: str) -> LLMResult:
-        payload = {
-            "model": self.model,
-            "stream": False,
-            "format": "json",
-            "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT.format(schema=schema, hints=SEMANTIC_HINTS)},
-                {"role": "user", "content": question},
-            ],
-            "options": {"temperature": 0},
-        }
-        req = urllib.request.Request(
-            self.url,
-            data=json.dumps(payload).encode(),
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
+        system_content = SYSTEM_PROMPT.format(schema=schema, hints=SEMANTIC_HINTS)
         try:
-            with urllib.request.urlopen(req, timeout=30) as response:
-                data = json.loads(response.read().decode())
-        except (urllib.error.URLError, TimeoutError) as exc:
+            response = self.client.chat(
+                model=self.model,
+                stream=False,
+                format="json",
+                messages=[
+                    {"role": "system", "content": system_content},
+                    {"role": "user", "content": question},
+                ],
+                options={"temperature": 0},
+            )
+            raw_content = response.message.content
+            return self._parse_response_json(raw_content)
+        except ollama.ResponseError as exc:
+            raise LLMError(f"Ollama error: {exc.error}") from exc
+        except ollama.RequestError as exc:
+            raise LLMError(f"Ollama connection error on {self.host}: {exc}") from exc
+        except Exception as exc:
+            if isinstance(exc, LLMError):
+                raise
             raise LLMError(f"Ollama request failed: {exc}") from exc
 
-        try:
-            obj = json.loads(data["message"]["content"])
-            return LLMResult(str(obj.get("sql", "")), str(obj.get("explanation", "")))
-        except (KeyError, TypeError, json.JSONDecodeError) as exc:
-            raise LLMError("Ollama returned an unexpected response shape.") from exc
-
-
     def repair(self, question: str, schema: str, previous_sql: str, error: str) -> LLMResult:
-        text = f"""Repair the previous SQL.
+        system_content = SYSTEM_PROMPT.format(
+            schema="{live schema supplied in user content}", hints=SEMANTIC_HINTS
+        )
+        repair_prompt = f"""Repair the previous SQL for this user question.
 
 QUESTION:
 {question}
@@ -176,7 +206,7 @@ QUESTION:
 PREVIOUS SQL:
 {previous_sql}
 
-ERROR:
+DATABASE/VALIDATION ERROR:
 {error}
 
 LIVE SCHEMA:
@@ -184,31 +214,33 @@ LIVE SCHEMA:
 
 Return JSON only: {{"sql":"...", "explanation":"..."}}.
 Only one read-only SELECT/WITH statement. Refuse if unanswerable."""
-        return self._request(text)
 
-    def _request(self, user_text: str) -> LLMResult:
-        payload = {
-            "model": self.model, "stream": False, "format": "json",
-            "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT.format(
-                    schema="{live schema supplied in user content}", hints=SEMANTIC_HINTS)},
-                {"role": "user", "content": user_text},
-            ],
-            "options": {"temperature": 0},
-        }
-        req = urllib.request.Request(self.url, data=json.dumps(payload).encode(),
-                                     headers={"Content-Type": "application/json"}, method="POST")
         try:
-            with urllib.request.urlopen(req, timeout=30) as response:
-                data=json.loads(response.read().decode())
-            obj=json.loads(data["message"]["content"])
-            return LLMResult(str(obj.get("sql","")), str(obj.get("explanation","")))
-        except (urllib.error.URLError, TimeoutError, KeyError, TypeError, json.JSONDecodeError) as exc:
-            raise LLMError(f"Ollama request/response failed: {exc}") from exc
+            response = self.client.chat(
+                model=self.model,
+                stream=False,
+                format="json",
+                messages=[
+                    {"role": "system", "content": system_content},
+                    {"role": "user", "content": repair_prompt},
+                ],
+                options={"temperature": 0},
+            )
+            raw_content = response.message.content
+            return self._parse_response_json(raw_content)
+        except ollama.ResponseError as exc:
+            raise LLMError(f"Ollama error: {exc.error}") from exc
+        except ollama.RequestError as exc:
+            raise LLMError(f"Ollama connection error on {self.host}: {exc}") from exc
+        except Exception as exc:
+            if isinstance(exc, LLMError):
+                raise
+            raise LLMError(f"Ollama repair request failed: {exc}") from exc
+
 
 def get_provider(name: str) -> BaseProvider:
-    if name == "gemini":
-        return GeminiProvider()
     if name == "ollama":
         return OllamaProvider()
+    if name == "gemini":
+        return GeminiProvider()
     return MockProvider()
