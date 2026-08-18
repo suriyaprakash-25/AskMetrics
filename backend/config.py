@@ -1,8 +1,14 @@
 from dataclasses import dataclass
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 
-ROOT = Path(__file__).resolve().parents[1]
+# Load .env from the repository root if present.
+# Shell environment variables always take precedence (override=False).
+_ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(_ROOT / ".env", override=False)
+
+ROOT = _ROOT
 
 
 def _positive_int(name: str, default: int, *, minimum: int = 1) -> int:
