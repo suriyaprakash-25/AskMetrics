@@ -1,0 +1,162 @@
+import React from 'react';
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
+import type { ResultRow } from '../api';
+
+interface ChartRendererProps {
+  data: ResultRow[];
+}
+
+const isNumeric = (value: unknown): value is number =>
+  typeof value === 'number' && Number.isFinite(value);
+
+const displayValue = (value: unknown): string => {
+  if (value === null || value === undefined) return '—';
+  if (typeof value === 'boolean') return value ? 'true' : 'false';
+  return String(value);
+};
+
+const renderTable = (data: ResultRow[]) => {
+  const keys = data.length > 0 ? Object.keys(data[0]) : [];
+
+  return (
+    <div className="result-table-wrap">
+      <table className="result-table">
+        <thead>
+          <tr>
+            {keys.map((key) => <th key={key}>{key}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row, rowIndex) => (
+            <tr key={rowIndex}>
+              {keys.map((key) => <td key={key}>{displayValue(row[key])}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export const ChartRenderer: React.FC<ChartRendererProps> = ({ data }) => {
+  if (!data || data.length === 0) {
+    return <div className="empty-result">No rows were returned.</div>;
+  }
+
+  const keys = Object.keys(data[0]);
+  const numericKeys = keys.filter((key) => data.some((row) => isNumeric(row[key])));
+  const dimensionKeys = keys.filter((key) => !numericKeys.includes(key));
+
+  // Deterministic rule:
+  // 0 dimensions + 1 numeric metric -> KPI.
+  // 1 dimension + numeric metrics -> chart (line for time-like dimensions, bar otherwise).
+  // 2 dimensions + 1 numeric metric -> grouped chart after deterministic pivoting.
+  // Anything else -> table only, because collapsing dimensions would be misleading.
+  if (data.length === 1 && dimensionKeys.length === 0 && numericKeys.length === 1) {
+    const key = numericKeys[0];
+    return (
+      <div>
+        <div className="single-value">
+          <span>{key}</span>
+          <strong>{displayValue(data[0][key])}</strong>
+        </div>
+        {renderTable(data)}
+      </div>
+    );
+  }
+
+  if (dimensionKeys.length === 1 && numericKeys.length > 0 && data.length > 1) {
+    const categoryKey = dimensionKeys[0];
+    const isTimeBased = /date|month|year|week|quarter|time/i.test(categoryKey);
+    const chart = isTimeBased ? (
+      <ResponsiveContainer width="100%" height={320}>
+        <LineChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" />
+          <XAxis dataKey={categoryKey} stroke="var(--text-secondary)" />
+          <YAxis stroke="var(--text-secondary)" />
+          <Tooltip />
+          <Legend />
+          {numericKeys.map((key) => <Line key={key} type="monotone" dataKey={key} stroke="var(--accent-color)" strokeWidth={2} />)}
+        </LineChart>
+      </ResponsiveContainer>
+    ) : (
+      <ResponsiveContainer width="100%" height={320}>
+        <BarChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" />
+          <XAxis dataKey={categoryKey} stroke="var(--text-secondary)" />
+          <YAxis stroke="var(--text-secondary)" />
+          <Tooltip />
+          <Legend />
+          {numericKeys.map((key) => <Bar key={key} dataKey={key} fill="var(--accent-color)" radius={[4, 4, 0, 0]} />)}
+        </BarChart>
+      </ResponsiveContainer>
+    );
+
+    return (
+      <div>
+        <div className="chart-container">{chart}</div>
+        {renderTable(data)}
+      </div>
+    );
+  }
+
+  if (dimensionKeys.length === 2 && numericKeys.length === 1 && data.length > 1) {
+    const [categoryKey, seriesKey] = dimensionKeys;
+    const valueKey = numericKeys[0];
+    const seriesValues = Array.from(new Set(data.map((row) => String(row[seriesKey])))).sort();
+    const grouped = new Map<string, ResultRow>();
+
+    for (const row of data) {
+      const category = String(row[categoryKey]);
+      const existing = grouped.get(category) ?? { [categoryKey]: category };
+      existing[String(row[seriesKey])] = isNumeric(row[valueKey]) ? row[valueKey] : null;
+      grouped.set(category, existing);
+    }
+
+    const chartData = Array.from(grouped.values());
+    const isTimeBased = /date|month|year|week|quarter|time/i.test(categoryKey);
+    const chart = isTimeBased ? (
+      <ResponsiveContainer width="100%" height={320}>
+        <LineChart data={chartData}>
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" />
+          <XAxis dataKey={categoryKey} stroke="var(--text-secondary)" />
+          <YAxis stroke="var(--text-secondary)" />
+          <Tooltip />
+          <Legend />
+          {seriesValues.map((series) => <Line key={series} type="monotone" dataKey={series} stroke="var(--accent-color)" strokeWidth={2} />)}
+        </LineChart>
+      </ResponsiveContainer>
+    ) : (
+      <ResponsiveContainer width="100%" height={320}>
+        <BarChart data={chartData}>
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" />
+          <XAxis dataKey={categoryKey} stroke="var(--text-secondary)" />
+          <YAxis stroke="var(--text-secondary)" />
+          <Tooltip />
+          <Legend />
+          {seriesValues.map((series) => <Bar key={series} dataKey={series} fill="var(--accent-color)" />)}
+        </BarChart>
+      </ResponsiveContainer>
+    );
+
+    return (
+      <div>
+        <div className="chart-container">{chart}</div>
+        {renderTable(data)}
+      </div>
+    );
+  }
+
+  return renderTable(data);
+};
